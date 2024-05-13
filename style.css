@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height:100vh;
+
+    font-family: sans-serif;
+    position: relative;
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: -2%;
+    font-size:16px  ;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    margin: -3%;
+}
+ul{
+    margin-top: 1%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding:10px 16px ;
+}
+ul li a{
+    font-size:16px  ;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin: -3%;
+    position: relative;
+}
+ul li a:hover{
+    color: rgb(230, 104, 59);
+}
+ul li a::before{
+    content:' ' ;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid indianred;
+                transition: 0.4s linear;
+}
+ul li a:hover::before{
+    width: 100%;
+}
+.info{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+.infi h1{
+    font-size: 65px;
+    color: rgb(36,32, 30);
+}
+.info h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.info span{
+    color: red;
+}
+.image{
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    right: 25%;
+    bottom: 20%;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    left: 20%;
+    transform: translate(20%);
+    bottom: 20;
+    transition: left 2s ease;
+}
+.image:hover .girl{
+    left:55%;
+}
+/* about */
+#about {
+    padding-top: 80px 0;
+    color: red;
+}
+
+.about-1{
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    right: 80%;
+    bottom: 20%;
+    flex-basis: 35%;
+}
+.about-1 img{
+    position: absolute;
+    height: 105%;
+    left: 20%;
+    transform: translate(20%);
+    top: 160%;
+    width: 125%;
+    border-radius: 15px;
+}
+.row {
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.about-2 {
+    margin-top: 32%;
+    margin-left: 45%; 
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 50px;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight:500 ;
+    cursor: pointer;
+    position: relative;
+}
+.links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.link ::after{
+    width: 50%;
+} 
+.sub{
+    color: black;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: black;
+    gap: 0px;
+    
+
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 14px;
+}
+.work-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 5%;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 60%;
+    margin-left: 25%;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+}
+.sub-title{
+    margin-top: 5%;
+    margin-left: 8%;
+    color: red;
+}
+.work1.img{
+    width: 40%;
+    margin-left: 8%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 0%;
+}
+.layer{
+    margin-left:12%;
+    margin-top: -23%;
+    width: 28.5%;
+    height: 43%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 20;
+    margin-bottom: 30%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px ; 
+}
+
+.layer1{
+    margin-left: 64%;
+    margin-top: -23%;
+    width: 29%;
+    height: 43%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 20;
+    margin-bottom: 30%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px ; 
+}
+.contact1{
+    margin-left: 8%;
+}
+.header{
+    margin-left:20px ;
+}
+.social-icons{
+    margin-left: 12%;
+}
+.sub-title1{
+    margin-left: 30%;
+    margin-top: 10px;
+    color: red;
+}
